@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://b1uypert1tm72"]
+
+[ext_resource type="Texture2D" uid="uid://bxjjhjl2hmw30" path="res://Red panda transparent.png" id="1_4flbx"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_onrkg"]
+size = Vector2(348, 265)
+
+[node name="Player" type="Node2D"]
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="Area2D"]
+scale = Vector2(0.28846154, 0.28846154)
+texture = ExtResource("1_4flbx")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(0, -7.5)
+shape = SubResource("RectangleShape2D_onrkg")
